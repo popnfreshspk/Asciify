@@ -14,7 +14,6 @@ class ImageHandler(tornado.web.RequestHandler):
 		y_dim = int(self.get_argument('y', 150))
 		
 		im = self.request.body
-		print len(im)
 		art = AsciiFy(im, 
 					  invert = invert,
 					  x_dim = x_dim,
